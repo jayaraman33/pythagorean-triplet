@@ -6,14 +6,14 @@ func Range(min, max int) (t []Triplet) {
 
 	var a, b, c int
 	for a = min; a <= max; a++ {
-		for b = a; b <= max; b++ {
-			for c = b; c <= max; c++ {
-				if a*a+b*b == c*c {
-					t = append(t, Triplet{a, b, c})
-				}
-			}
-		}
-	}
+	for b = a; b <= max; b++ {
+	for c = b; c <= max; c++ {
+	if a*a+b*b == c*c {
+	t = append(t, Triplet{a, b, c})
+       }
+     }
+   }
+}
 	return t
 }
 
